@@ -1,3 +1,6 @@
+/*
+** TODO: Complete the necessary conversion logic in /controllers/convertHandler.js
+*/
 function ConvertHandler() {
   
   this.getNum = function(input) {
@@ -38,6 +41,13 @@ function ConvertHandler() {
     
     return result;
   };
+
+  return (req, res) => {
+      const resObj = {
+        string: "It works!"
+      }
+      res.json(resObj);
+    }
   
 }
 
