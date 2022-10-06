@@ -12,6 +12,8 @@ const runner            = require('./test-runner');
 
 let app = express();
 
+app.use(cors())
+
 app.use('/public', express.static(process.cwd() + '/public'));
 
 app.use(cors({origin: '*'})); //For FCC testing purposes only
