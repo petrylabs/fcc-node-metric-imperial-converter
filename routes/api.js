@@ -44,9 +44,9 @@ module.exports = function (app) {
         })
       }
       catch (error) {
-        res.json({
-          string: error.message
-        });
+        res.send(
+          error.message
+        );
       }
     })
 };

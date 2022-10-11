@@ -15,7 +15,7 @@
           "symbol":"km",
           "conversion":{
             "unit":"mi",
-            "ratio":0.6214
+            "ratio":0.6213727
          }  
        },
        {
@@ -51,7 +51,7 @@
           "symbol":"kg",
           "conversion":{
             "unit":"lbs",
-            "ratio":2.20462
+            "ratio":2.204624
          }
        }
     ]

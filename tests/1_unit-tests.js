@@ -87,7 +87,7 @@ suite('Unit Tests', function(){
             const initNum = convertHandler.getNum(input);
             const initUnit = convertHandler.getUnit(input);
             const result = convertHandler.convert(initNum, initUnit);
-            const expectedResult = 0.264172;
+            const expectedResult = 0.26417;
             assert.equal(result, expectedResult);
         })
         test('convertHandler should correctly convert mi to km.', function() {
@@ -103,7 +103,7 @@ suite('Unit Tests', function(){
             const initNum = convertHandler.getNum(input);
             const initUnit = convertHandler.getUnit(input);
             const result = convertHandler.convert(initNum, initUnit);
-            const expectedResult = 0.6214;
+            const expectedResult = 0.62137;
             assert.equal(result, expectedResult);
         })
         test('convertHandler should correctly convert lbs to kg.', function() {
@@ -111,7 +111,7 @@ suite('Unit Tests', function(){
             const initNum = convertHandler.getNum(input);
             const initUnit = convertHandler.getUnit(input);
             const result = convertHandler.convert(initNum, initUnit);
-            const expectedResult = 0.453592;
+            const expectedResult = 0.45359;
             assert.equal(result, expectedResult);
         })
         test('convertHandler should correctly convert kg to lbs.', function() {

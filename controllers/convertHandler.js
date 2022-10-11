@@ -7,7 +7,7 @@ function ConvertHandler() {
   this.units = units;
   
   this.getNum = function(input) {
-    const regex = /^(\d+\.?\d*\/?\d*)?([a-zA-Z]*)$/
+    const regex = /^(\d+\.?\d*\/?\d*\.?\d*)?([a-zA-Z]*)$/
     const match = input.match(regex);
     if(match)
       return eval(match.at(1)) || 1;
@@ -47,7 +47,7 @@ function ConvertHandler() {
   
   this.convert = function(initNum, initUnit) {
     const conversionRatio = this.getConversionRatio(initUnit);
-    return (Math.round(initNum * conversionRatio * 100000) / 100000);
+    return Number((initNum * conversionRatio).toFixed(5));
   };
   
   this.getString = function(initNum, initUnit, returnNum, returnUnit) {
