@@ -47,7 +47,7 @@ function ConvertHandler() {
   
   this.convert = function(initNum, initUnit) {
     const conversionRatio = this.getConversionRatio(initUnit);
-    return (initNum * conversionRatio).toFixed(5);
+    return (Math.round(initNum * conversionRatio * 100000) / 100000);
   };
   
   this.getString = function(initNum, initUnit, returnNum, returnUnit) {
